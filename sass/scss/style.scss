@@ -1,0 +1,21 @@
+/**siempre llamo primero a las utilidades en primer orden**/
+@import "./utilities/variable";
+@import "./utilities/maps.scss";
+@import "./utilities/mixins";
+/**bloques que corresponden a la carpeta base en 2do orden**/
+
+@import "./base/reset.scss";
+
+/**todo lo correspondiente a layout en 3er orden**/
+@import "./layout/header";
+@import "./layout/main-index";
+
+/**todo lo correspondiente a los componentes en 4to orden**/
+@import "./components/cards";
+
+
+
+
+/** mediaquerry en 5to orden**/
+@import "./layout/media/media768";
+@import "./layout/media/media320";

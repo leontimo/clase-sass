@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    background-color: black;
+
+    nav {
+        .navbar {
+            @include flex(row, center, center, 10px);
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                    font-size: 1.25rem;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

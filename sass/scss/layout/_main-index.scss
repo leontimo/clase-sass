@@ -1,0 +1,36 @@
+.main-index{
+    width: 80%;
+    margin:auto;
+    background-color:lightcyan;
+    .section-principal{
+        text-align: center;
+        color: white;
+        font-size: 1.875rem;
+        background-color: lightcoral;
+      
+    }
+    .section-secundaria{
+        @include flex (column, space-between, flex-end, none);
+        background-color: blueviolet;
+    
+    }
+}
+.clase1{
+    font-size: 20px;
+    background-color: lightblue;
+    text-align: right;
+    color: lightgreen;
+}
+
+.clase2{
+@extend .clase1;
+background-color: lightcoral;
+}
+.clase3{
+    @extend .clase2;
+    font-size:10px;
+    
+}
+.grid{
+    @include grid(repeat(2,1fr), repeat (3,1fr), center, center,"item1 item1" "item2 item2")
+}
